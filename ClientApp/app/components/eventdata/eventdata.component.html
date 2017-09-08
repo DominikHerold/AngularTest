@@ -16,7 +16,7 @@
     <tbody>
     <tr *ngFor="let event of events">
         <td>{{ event.id }}</td>
-        <td>{{ event.name }}</td>
+        <td>{{ event.name | uppercase }}</td>
         <td>{{ event.date }}</td>
         <td>{{ event.time }}</td>
     </tr>
