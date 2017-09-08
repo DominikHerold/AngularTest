@@ -1,0 +1,24 @@
+﻿<h1>Events</h1>
+
+<p>This component demonstrates dynamic event data.</p>
+
+<p *ngIf="!events"><em>Loading...</em></p>
+
+<table class='table' *ngIf="events">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let event of events">
+        <td>{{ event.id }}</td>
+        <td>{{ event.name }}</td>
+        <td>{{ event.date }}</td>
+        <td>{{ event.time }}</td>
+    </tr>
+    </tbody>
+</table>
